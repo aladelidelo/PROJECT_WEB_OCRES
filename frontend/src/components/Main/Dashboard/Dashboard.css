@@ -1,0 +1,45 @@
+.container-dashboard {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.container-dashboard-top {
+    display: flex;
+    height: 50%;
+    width: 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.container-dashboard-topchild {
+    display: flex;
+    height: 100%;
+    width: 33%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.container-dashboard-bot {
+    display: flex;
+    height: 50%;
+    width: 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.container-dashboard-botchild {
+    display: flex;
+    height: 100%;
+    width: 33%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}

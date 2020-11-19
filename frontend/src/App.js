@@ -1,26 +1,32 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Header from "./components/Header/Header";
+import Main from "./components/Main/Main";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// state Admin
+// Crée function modifier state admin
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.handler = this.handler.bind(this);
+    this.state = { admin: false };
+  }
+
+  handler() {
+    if (this.state.admin) this.setState({ admin: false });
+    else this.setState({ admin: true });
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Header admin={this.state.admin} handler={this.handler} />
+        <Main admin={this.state.admin} />
+      </div>
+    );
+  }
 }
 
 export default App;
