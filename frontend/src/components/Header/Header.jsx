@@ -17,6 +17,11 @@ class Header extends Component {
                         Dashboard
                     </button>
                 </div>
+
+                <div>
+                    Analyse de Data sur une BDD de film
+                </div>
+
                 <div>
                     <button className="btn" onClick={this.pressAdmin}>
                         Admin
