@@ -7,9 +7,9 @@ class Widjet1 extends Component {
     super(props);
 
     var parseData = (bigData) => {
-      var data = [{ name: "1980", moyenne: 100, count: 0, total: 0 }, { name: "1990", moyenne: 0, count: 0, total: 0 }, { name: "2000", moyenne: 0, count: 0, total: 0 }, { name: "2010", moyenne: 0, count: 0, total: 0 }];
+      var data = [{ name: "1980", moyenne: 0, count: 0, total: 0 }, { name: "1990", moyenne: 0, count: 0, total: 0 }, { name: "2000", moyenne: 0, count: 0, total: 0 }, { name: "2010", moyenne: 0, count: 0, total: 0 }];
       bigData.forEach((e) => {
-        if (e.yearOfRelease != "N/A" && e.duration != "N/A") {
+        if (e.yearOfRelease != "N/A" && e.duration != "N/A" && e.type ==="movie") {
           var year = parseInt(e.yearOfRelease.slice(-4));
           var duration = parseInt(e.duration);
           data = data.map((x) => {
@@ -43,7 +43,7 @@ class Widjet1 extends Component {
         <div className="graph">
           <ResponsiveContainer width="100%" height="100%">
             <ComposedChart data={this.data} margin={{ top: 30, right: 30, bottom: 30, left: 20 }}>
-              <Line yAxisId="left" type='step-after' dataKey="moyenne" stroke="#8884d8" activeDot={{ r: 8 }} type="stepAfter" />
+              <Line yAxisId="left" dataKey="moyenne" stroke="#8884d8" activeDot={{ r: 8 }} type="stepAfter" />
               <Bar yAxisId="right" dataKey="count" barSize={20} fill="#32CD32" />
               <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
               <XAxis tick={{ fontSize: 12 }} size="1" dataKey="name" >

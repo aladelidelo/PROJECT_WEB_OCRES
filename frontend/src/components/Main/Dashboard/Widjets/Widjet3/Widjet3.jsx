@@ -9,7 +9,7 @@ class Widjet3 extends Component {
     var parseData = (bigData) => {
       var data = [{ name: "1980", moyenne: 100, count: 0, total: 0 }, { name: "1990", moyenne: 0, count: 0, total: 0 }, { name: "2000", moyenne: 0, count: 0, total: 0 }, { name: "2010", moyenne: 0, count: 0, total: 0 }];
       bigData.forEach((e) => {
-        if (e.yearOfRelease != "N/A" && e.rottenTomatoesScore != "N/A") {
+        if (e.yearOfRelease != "N/A" && e.rottenTomatoesScore != "N/A" && e.type ==="movie") {
           var year = parseInt(e.yearOfRelease.slice(-4));
           var rottenTomatoesScore = parseInt(e.rottenTomatoesScore);
           data = data.map((x) => {
