@@ -1,6 +1,7 @@
 .App {
   text-align: center;
-  background-color: #282c34;
+ /* background-color: #282c34;*/
+  background-color: #5A5E6B;
   height: 100%;
   width: 100%;
   display: flex;
@@ -12,3 +13,5 @@
 .App-link {
   color: #09d3ac;
 }
+
+

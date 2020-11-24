@@ -19,7 +19,7 @@ class Header extends Component {
                 </div>
 
                 <div>
-                    Analyse de Data sur une BDD de film
+                    <b>Analyse de Data sur une BDD de film</b>
                 </div>
 
                 <div>

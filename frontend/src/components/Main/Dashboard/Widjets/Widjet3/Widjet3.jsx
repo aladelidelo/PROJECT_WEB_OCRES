@@ -40,7 +40,7 @@ class Widjet3 extends Component {
         <div className="graph">
           <ResponsiveContainer width="100%" height="100%">
             <ComposedChart data={this.data} margin={{ top: 30, right: 30, bottom: 30, left: 20 }}>
-              <Line yAxisId="left" dataKey="moyenne" stroke="#8884d8" activeDot={{ r: 8 }} type="stepAfter" />
+              <Line yAxisId="left" dataKey="moyenne" stroke="white" activeDot={{ r: 8 }} type="stepAfter" />
               <Bar yAxisId="right" dataKey="count" barSize={20} fill="#32CD32" />
               <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
               <XAxis tick={{ fontSize: 12 }} size="1" dataKey="name" >

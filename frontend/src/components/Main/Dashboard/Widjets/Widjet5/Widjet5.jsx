@@ -31,7 +31,7 @@ class Widjet5 extends Component {
     return (
       <div className="widjet-container">
         <div className="title">
-          <h5> language proposé dans les films et séries</h5>
+          <h5> Langage proposé dans les films et séries</h5>
         </div>
         <div className="graph">
           <ResponsiveContainer width="100%" height="100%">

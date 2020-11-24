@@ -40,7 +40,7 @@ class Widjet4 extends Component {
       <div className="widjet-container">
 
         <div className="title">
-          <h5> ratio film/série dans la BDD</h5>
+          <h5> Ratio film/série dans la BDD</h5>
         </div>
 
         <div className="graph">
