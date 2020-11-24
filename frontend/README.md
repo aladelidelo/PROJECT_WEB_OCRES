@@ -1,3 +1,9 @@
+Johan Croc
+Julien Vidilla
+TD4A - OCRES
+
+
+
 # Frontend
 
 Ce dossier contiendra la partie frontend de votre projet.
