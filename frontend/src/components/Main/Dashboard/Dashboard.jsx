@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { LineChart, Line, ResponsiveContainer } from 'recharts';
+///import { LineChart, Line, ResponsiveContainer } from 'recharts';
 import Widjet1 from './Widjets/Widjet1/Widjet1';
 import Widjet2 from './Widjets/Widjet2/Widjet2';
 import Widjet3 from './Widjets/Widjet3/Widjet3';

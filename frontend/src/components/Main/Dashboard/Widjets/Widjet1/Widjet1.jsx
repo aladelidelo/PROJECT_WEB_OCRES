@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { LineChart, Line, ResponsiveContainer, CartesianGrid, XAxis, YAxis, Tooltip, Label, Bar, ComposedChart, BarChart } from 'recharts';
+import { Line, ResponsiveContainer, CartesianGrid, XAxis, YAxis, Tooltip, Label, Bar, ComposedChart } from 'recharts';
 import './../Widjets.css';
 
 class Widjet1 extends Component {
@@ -9,7 +9,7 @@ class Widjet1 extends Component {
     var parseData = (bigData) => {
       var data = [{ name: "1980", moyenne: 0, count: 0, total: 0 }, { name: "1990", moyenne: 0, count: 0, total: 0 }, { name: "2000", moyenne: 0, count: 0, total: 0 }, { name: "2010", moyenne: 0, count: 0, total: 0 }];
       bigData.forEach((e) => {
-        if (e.yearOfRelease != "N/A" && e.duration != "N/A" && e.type ==="movie") {
+        if (e.yearOfRelease !== "N/A" && e.duration !== "N/A" && e.type ==="movie") {
           var year = parseInt(e.yearOfRelease.slice(-4));
           var duration = parseInt(e.duration);
           data = data.map((x) => {
@@ -22,7 +22,7 @@ class Widjet1 extends Component {
         }
       })
       data = data.map((x) => {
-        if (x.count == 0) x.moyenne = 0;
+        if (x.count === 0) x.moyenne = 0;
         else x.moyenne = (x.total) / (x.count);
         return x;
       })
@@ -50,10 +50,10 @@ class Widjet1 extends Component {
                 <Label value="Années" offset={-15} position="insideBottom" style={{ textAnchor: 'middle', fontSize: '80%', fill: 'rgba(0, 0, 0, 0.87)' }} />
               </XAxis>
               <YAxis yAxisId="left" tick={{ fontSize: 12 }}>
-                <Label value="durée en min" offset={-15} position="left" angle="-90" style={{ textAnchor: 'middle', fontSize: '80%', fill: 'rgba(0, 0, 0, 0.87)' }} />
+                <Label value="durée en min" offset={-15} position="left" angle={-90} style={{ textAnchor: 'middle', fontSize: '80%', fill: 'rgba(0, 0, 0, 0.87)' }} />
               </YAxis>
               <YAxis yAxisId="right" orientation="right" tick={{ fontSize: 12 }} >
-                <Label value="nombre de films" offset={-15} position="right" angle="90" style={{ textAnchor: 'middle', fontSize: '80%', fill: 'rgba(0, 0, 0, 0.87)' }} />
+                <Label value="nombre de films" offset={-15} position="right" angle={90} style={{ textAnchor: 'middle', fontSize: '80%', fill: 'rgba(0, 0, 0, 0.87)' }} />
               </YAxis>
               <Tooltip />
             </ComposedChart>
