@@ -31,7 +31,7 @@ class Dashboard extends Component {
         "language":"English","type":"movie","poster":"https://m.media-amazon.com/images/M/MV5BMTYzMDM4NzkxOV5BMl5BanBnXkFtZTgwNzM1Mzg2NzM@._V1_SX300.jpg","boxOffice":139,
         "rottenTomatoesScore":"97%"},{"id":"tt4925292", "genre": "horreur", "movie":"Lady Bird","yearOfRelease":"01 Dec 2017","duration":"94 min","actors":"Saoirse Ronan, Laurie Metcalf, Tracy Letts, Lucas Hedges","language":"English, Spanish",
         "type":"movie","poster":"https://m.media-amazon.com/images/M/MV5BODhkZGE0NDQtZDc0Zi00YmQ4LWJiNmUtYTY1OGM1ODRmNGVkXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
-        "boxOffice":274,"rottenTomatoesScore":"99%"}, {"id":"tt0228746", "movie":"Pretty Women", "yearOfRelease":"10 Aug 1944", "duration":"10 min", "actors":"Red River Dave, Ann Parker, Red River Boys",
+        "boxOffice":274,"rottenTomatoesScore":"99%"}, {"id":"tt0228746", "genre": "aventure",  "movie":"Pretty Women", "yearOfRelease":"10 Aug 1944", "duration":"10 min", "actors":"Red River Dave, Ann Parker, Red River Boys",
         "language":"English","type":"movie","poster":"N/A","boxOffice":89,"rottenTomatoesScore":"N/A"},{"id":"tt0499549", "genre": "aventure", "movie":"Avatar","yearOfRelease":"18 Dec 2009","duration":"162 min",
         "actors":"Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang","language":"English, Spanish","type":"movie","poster":"https://m.media-amazon.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SX300.jpg",
         "boxOffice":229,"rottenTomatoesScore":"82%"},{"id":"tt0034583", "genre": "action", "movie":"Casablanca","yearOfRelease":"23 Jan 1943","duration":"102 min","actors":"Humphrey Bogart, Ingrid Bergman, Paul Henreid, Claude Rains",
