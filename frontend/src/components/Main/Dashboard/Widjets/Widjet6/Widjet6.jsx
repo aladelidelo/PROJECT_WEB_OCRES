@@ -7,12 +7,12 @@ class Widjet6 extends Component {
     super(props);
 
     var parseData = (bigData) => {
-      var data = [{ name: "action", count: 4 , fill: "#8884d8"}, { name: "aventure", count: 3, fill: "#83a6ed" } , { name: "horreur", count: 0, fill: "#8dd1e1" }, { name: "drame", count: 1, fill: "#82ca9d" }, { name: "sci-fi", count: 0, fill: "#a4de6c" }];
+      var data = [{ name: "action", count: 0 , fill: "#8884d8"}, { name: "aventure", count: 0, fill: "#83a6ed" } , { name: "horreur", count: 0, fill: "#8dd1e1" }, { name: "drame", count: 0, fill: "#82ca9d" }, { name: "sci-fi", count: 0, fill: "#a4de6c" }];
       bigData.forEach((e) => {
-        if (e.type !== "N/A") {
-          var type = e.type;
+        if (e.genre !== "N/A") {
+          var genre = e.genre;
           data = data.map((x) => {
-            if (type === x.name) {  ///name peut-être
+            if (genre === x.name) {  ///name peut-être
               x.count++;
               
             }
