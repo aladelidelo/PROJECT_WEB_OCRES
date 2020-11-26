@@ -62,16 +62,16 @@ class Admin extends Component {
             <li> Ajouter un film avec son titre</li>
             <input type="text" placeholder="Exemple : Avenger 4" value={this.state.titleAdd} onChange={this.handleChangeAdd} />
             <br />
-            <button className="btn" onClick={this.sendData} > Send </button>
+            <button className="btn2" onClick={this.sendData} > Send </button>
             <br />
             <li> Suprimer un film avec son ID</li>
             <input type="text" placeholder="Exemple : tt1201607" value={this.state.titleDel} onChange={this.handleChangeDel} />
             <br />
-            <button className="btn" onClick={this.delData} > Send </button>
+            <button className="btn2" onClick={this.delData} > Send </button>
             <br />
             <li> Liste de tous les films</li>
-            <button className="btn" onClick={this.display} > Display liste </button>
-            <button className="btn" onClick={this.close} > Close X</button>
+            <button className="btn2" onClick={this.display} > Display liste </button>
+            <button className="btn2" onClick={this.close} > Close X</button>
             <DataList display={this.state.display} data={this.state.data}/>
           </div>
         </div>

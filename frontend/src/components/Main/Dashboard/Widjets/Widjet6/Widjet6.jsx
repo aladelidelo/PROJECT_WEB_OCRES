@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { ResponsiveContainer, Tooltip, RadialBar, RadialBarChart, Legend } from 'recharts';
 import './../Widjets.css';
+import './Widjet6.css';
 
 class Widjet6 extends Component {
   constructor(props) {
@@ -43,7 +44,7 @@ class Widjet6 extends Component {
           <h5>Ratio du genre des films</h5>
         </div>
 
-        <div className="graph">
+        <div className="graph2">
           <ResponsiveContainer width="100%" height="100%">
             <RadialBarChart 
 			  width={730} 
@@ -55,7 +56,7 @@ class Widjet6 extends Component {
 			  endAngle={0}
 			>
 			  <RadialBar minAngle={15} label={{ fill: 'white', position: 'Start' }} background clockWise={true} dataKey='count' />
-			  <Legend iconSize={10} width={110} height={140} layout='vertical' verticalAlign='left' align="right" />
+			  <Legend iconSize={10} width={135} height={150} layout='vertical' verticalAlign='left' align="left"/>
 			  <Tooltip />
 			</RadialBarChart>
           </ResponsiveContainer>

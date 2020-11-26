@@ -7,6 +7,7 @@
 .title {
     height: 15%;
     font-size: calc(5px + 2vmin);
+    color:  white;
 }
 .graph {
     height: 80%;

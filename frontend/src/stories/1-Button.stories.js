@@ -1,17 +1,21 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
 import { Button } from '@storybook/react/demo';
+import Header from "../components/Header/Header";
+import Main from "../components/Main/Main";
+import Dashboard from "../components/Main/Dashboard/Dashboard";
+import Admin from "../components/Main/Admin/Admin";
+
 
 export default {
-  title: 'Button',
+  title: 'Test',
 };
 
-export const text = () => <Button onClick={action('clicked')}>Hello Button</Button>;
+export const header = () => <Header/>;
 
-export const emoji = () => (
-  <Button onClick={action('clicked')}>
-    <span role="img" aria-label="so cool">
-      😀 😎 👍 💯
-    </span>
-  </Button>
-);
+export const main = () => <Main/>;
+
+export const dashboard = () => <Dashboard/>;
+
+export const admin = () => <Admin/>;
+

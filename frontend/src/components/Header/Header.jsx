@@ -18,7 +18,7 @@ class Header extends Component {
                     </button>
                 </div>
 
-                <div>
+                <div className="b">
                     <b>Analyse de Data sur une BDD de film</b>
                 </div>
 

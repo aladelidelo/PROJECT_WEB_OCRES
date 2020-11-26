@@ -47,13 +47,13 @@ class Widjet1 extends Component {
               <Bar yAxisId="right" dataKey="count" barSize={20} fill="#32CD32" />
               <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
               <XAxis tick={{ fontSize: 12 }} size="1" dataKey="name" >
-                <Label value="Années" offset={-15} position="insideBottom" style={{ textAnchor: 'middle', fontSize: '80%', fill: 'rgba(0, 0, 0, 0.87)' }} />
+                <Label value="Années" offset={-15} position="insideBottom" style={{ textAnchor: 'middle', fontSize: '80%', fill: 'rgba(255, 255, 255, 0.87)' }} />
               </XAxis>
               <YAxis yAxisId="left" tick={{ fontSize: 12 }}>
-                <Label value="durée en min" offset={-15} position="left" angle={-90} style={{ textAnchor: 'middle', fontSize: '80%', fill: 'rgba(0, 0, 0, 0.87)' }} />
+                <Label value="durée en min" offset={-15} position="left" angle={-90} style={{ textAnchor: 'middle', fontSize: '80%', fill: 'rgba(255, 255, 255, 0.87)' }} />
               </YAxis>
               <YAxis yAxisId="right" orientation="right" tick={{ fontSize: 12 }} >
-                <Label value="nombre de films" offset={-15} position="right" angle={90} style={{ textAnchor: 'middle', fontSize: '80%', fill: 'rgba(0, 0, 0, 0.87)' }} />
+                <Label value="nombre de films" offset={-15} position="right" angle={90} style={{ textAnchor: 'middle', fontSize: '80%', fill: 'rgba(255, 255, 255, 0.87)' }} />
               </YAxis>
               <Tooltip />
             </ComposedChart>
