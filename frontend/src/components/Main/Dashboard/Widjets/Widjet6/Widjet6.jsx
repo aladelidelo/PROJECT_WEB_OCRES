@@ -47,18 +47,18 @@ class Widjet6 extends Component {
         <div className="graph2">
           <ResponsiveContainer width="100%" height="100%">
             <RadialBarChart 
-			  width={730} 
-			  height={250} 
-			  innerRadius="10%" 
-			  outerRadius="100%" 
-			  data={this.data} 
-			  startAngle={180} 
-			  endAngle={0}
-			>
-			  <RadialBar minAngle={15} label={{ fill: 'white', position: 'Start' }} background clockWise={true} dataKey='count' />
-			  <Legend iconSize={10} width={135} height={150} layout='vertical' verticalAlign='left' align="left"/>
-			  <Tooltip />
-			</RadialBarChart>
+      			  width={730} 
+      			  height={250} 
+      			  innerRadius="10%" 
+      			  outerRadius="100%" 
+      			  data={this.data} 
+      			  startAngle={180} 
+      			  endAngle={0}
+      			>
+      			  <RadialBar minAngle={15} label={{ fill: 'white', position: 'Start' }} background clockWise={true} dataKey='count' />
+      			  <Legend iconSize={10} width={135} height={150} layout='vertical' verticalAlign='left' align="left"/>
+      			  <Tooltip />
+      			</RadialBarChart>
           </ResponsiveContainer>
         </div>
 
