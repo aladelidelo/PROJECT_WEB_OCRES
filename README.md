@@ -12,6 +12,8 @@ Enfin, nous montrons les langages les plus utilisés pour les films et les séri
 # Problèmes rencontrés 
 
 Pas de problèmes majeurs pour le moment, uniquement des petits soucis que nous avons su résoudre après plusieurs tentatives comme l'affichage des widgets correctement avec des données.
+Le tp5 a permis de faire des tests rapidemments en recupérent le fichier .json
+Le plus difficile a été de commencer le projet. Une fois que les pages admin et dashboard étaient faites avec une div dédié pour chaque widget le reste est allé assez vite. Pas de pb particuliés sur les widgets.
 
 # Lien pour la gestion du projet
 
