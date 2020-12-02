@@ -14,6 +14,7 @@ Le frontend à été initalisé avec un create-react-app et sotrybook y est deja
 `cd frontend`
 `npm install`
 `npm start`
+`npm run storybook` 
 
 Storybook est là pour vous aider à prototyper et documenter vos composants. Si nous n'arrivons pas à lancer votre projet, nous pourrons au moins regarder vos composants en fonctionnement.
 

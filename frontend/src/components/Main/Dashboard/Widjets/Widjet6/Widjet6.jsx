@@ -6,27 +6,23 @@ import './Widjet6.css';
 class Widjet6 extends Component {
   constructor(props) {
     super(props);
-
     var parseData = (bigData) => {
-      var data = [{ name: "action", count: 0 , fill: "#8884d8"}, { name: "aventure", count: 0, fill: "#83a6ed" } , { name: "horreur", count: 0, fill: "#8dd1e1" }, { name: "drame", count: 0, fill: "#82ca9d" }, { name: "sci-fi", count: 0, fill: "#a4de6c" }];
+      var data = [{ name: "Action", count: 0 , fill: "#8884d8"}, { name: "Adventure", count: 0, fill: "#83a6ed" } , { name: "Horror", count: 0, fill: "#8dd1e1" }, { name: "Drama", count: 0, fill: "#82ca9d" }, { name: "Sci-Fi", count: 0, fill: "#a4de6c" }];
       bigData.forEach((e) => {
-        if (e.genre !== "N/A") {
-          var genre = e.genre;
+        console.log("e: ",e);
+        if (e.genre && e.genre !== "N/A") {
+          var genre = e.genre.replaceAll(',', '').split(' ');
+          console.log(genre);
           data = data.map((x) => {
-            if (genre === x.name) {  ///name peut-être
-              x.count++;
-              
-            }
+            genre.forEach((genreStr)=> {
+              if (genreStr === x.name) {
+                x.count++;
+                return;
+               }
+              });
             return x;
           })
         }
-      })
-      data = data.map((x) => {
-        if (x.count === 0) x.count = 2;
-        else {
-          x.count = (x.count);
-        }
-        return x;
       })
       return (data);
     }

@@ -9,7 +9,6 @@ class Widjet5 extends Component {
       var data = [{ name: "English",  count: 0 }, { name: "French",  count: 0 }, { name: "Spanish", count: 0 }, { name: "Japanese", count: 0 }];
       bigData.forEach((e) => {
         if (e.language !== "N/A") {     ///&& e.type ==="movie"
-
           var language = e.language;
           language = e.language.replaceAll(',', '').split(' ');
           data = data.map((x) => {
