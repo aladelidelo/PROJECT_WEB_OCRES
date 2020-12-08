@@ -12,6 +12,7 @@ Enfin, nous montrons les langages les plus utilisés pour les films et les séri
 # Problèmes rencontrés 
 
 Des petits soucis que nous avons su résoudre après plusieurs tentatives comme l'affichage des widgets correctement avec des données.
+Le storybook des widgets ne fonctionne pas, on ne sait pas encore pourquoi.
 Le tp5 a permis de faire des tests rapidement en recupérant le fichier .json
 Le plus difficile a été de commencer le projet. Une fois que les pages admin et dashboard étaient faites avec une div dédiée pour chaque widget, le reste est allé assez vite. 
 
