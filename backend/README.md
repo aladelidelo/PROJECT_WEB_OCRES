@@ -9,7 +9,7 @@ TD4A - OCRES
 Ce dossier contiendra la partie Backend de votre projet.
 
 ##usage
-`cd Backend`
+`cd backend`
 `npm install`
 `npm start`
 

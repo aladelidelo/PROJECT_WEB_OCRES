@@ -3,6 +3,7 @@ import './Admin.css';
 import JSONTree from 'react-json-tree'
 import axios from 'axios'
 import qs from 'querystring';
+import Horloge from './Horloge';
 
 const theme = {
   scheme: 'monokai',
@@ -129,6 +130,7 @@ class Admin extends Component {
       <div className="container-admin">
         <div className="admin-title">
           <h1> Admin Panel</h1>
+          <Horloge/>
         </div>
         <div className="main-admin">
           <div className="main-content">
