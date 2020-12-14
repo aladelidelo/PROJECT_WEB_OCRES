@@ -137,7 +137,7 @@ class Admin extends Component {
             <br />
             <button className="btn2" onClick={this.sendData} > Send </button>
             <br />
-            <li> Suprimer un film avec son ID</li>
+            <li> Supprimer un film avec son ID</li>
             <input type="text" placeholder="Exemple : tt1201607" value={this.state.titleDel} onChange={this.handleChangeDel} />
             <br />
             <button className="btn2" onClick={this.delData} > Send </button>
